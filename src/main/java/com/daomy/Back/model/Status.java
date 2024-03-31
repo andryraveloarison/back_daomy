@@ -5,4 +5,8 @@ public enum Status {
     MESSAGE,
     LEAVE,
     REFUSED,
+    SUCCES,
+    RESULT,
+    NewParty,
+    CREATE
 }

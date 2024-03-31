@@ -17,6 +17,11 @@ public class Message {
     private Status status;
 
     private String[][] listeDominos;
+    private String action;
+
+    public String getAction() {
+        return action;
+    }
 
     public Status getStatus() {
         return this.status;
@@ -38,12 +43,13 @@ public class Message {
         return this.listeDominos;
     }
 
-    public Message(String senderName,String receiverName, String message, Status status, String[][] listeDominos) {
+    public Message(String senderName,String receiverName, String message, Status status, String[][] listeDominos,String action) {
         this.senderName = senderName;
         this.status = status;
         this.receiverName=receiverName;
         this.message=message;
         this.listeDominos=listeDominos;
+        this.action=action;
     }
 }
 
